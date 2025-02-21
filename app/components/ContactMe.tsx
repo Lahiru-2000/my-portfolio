@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import Image from "next/image";
+// import Image from "next/image";
 // import BorderPic from "../../../public/assets/landing Page/Border-pic.png";
 // import ContactPic from "../../../public/assets/contact-Syner.png";
 // import Call from "../../../public/assets/landing Page/call.png";
@@ -9,7 +9,7 @@ import Image from "next/image";
 // import Instagram from "@/public/assets/Instagram.png";
 // import Fb from "@/public/assets/Facebook.png";
 // import Linkedin from "@/public/assets/Linkedin.png";
-import { Facebook, Linkedin, Mail, Phone } from "lucide-react";
+import {  Linkedin, Mail, Phone } from "lucide-react";
 
 function Hireme() {
   const [formData, setFormData] = useState({
@@ -102,7 +102,7 @@ function Hireme() {
                 <h4>Contact Me</h4>
               </div>
               <div className="flex  justify-center items-start  flex-col sm:pt-3 ">
-                <span className="xsm:pb-10 pb-5 max-sm:text-[15px] xl:text-[17px] text-[16px] text-gray-300">Have a project in mind? Let's turn your vision into reality! Get in touch and let's create something amazing together.</span>
+                <span className="xsm:pb-10 pb-5 max-sm:text-[15px] xl:text-[17px] text-[16px] text-gray-300">Have a project in mind? Let&apos;s turn your vision into reality! Get in touch and let&apos;s create something amazing together.</span>
                 <div className="flex flex-col max-xsm:gap-y-[5px] sm:gap-y-[20px] max-sm:gap-y-[20px] justify-center"> 
                     <div className="flex gap-[18px] xsm:items-center max-xsm:flex-col">
                         <div>

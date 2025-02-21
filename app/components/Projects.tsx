@@ -93,7 +93,7 @@ const OurProjects = () => {
           </h2>
            
             <p className=" font-normal  max-w-full text-start text-lg text-gray-300 leading-relaxed">
-            Here, you'll discover a diverse collection of the work I’ve built—ranging from dynamic web applications 
+            Here, you&apos;ll discover a diverse collection of the work I’ve built—ranging from dynamic web applications 
             to full-stack platforms designed for efficiency and scalability.
 
             Each project is a testament to my expertise in React, Next.js, Spring Boot, 

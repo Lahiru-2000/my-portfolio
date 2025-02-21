@@ -22,7 +22,7 @@ export default function Hero() {
           className="max-sm:hidden flex xl:flex-col max-sm:flex-wrap max-xl:items-baseline max-xl:gap-4 justify-center"
         >
           <span className="xl:text-[3.5vw] md:text-[40px] lg:text-[45px] text-[33px] font-semibold max-sm:text-white sm:bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-            Hello! I'm
+            Hello! I&apos;m
           </span>
           <span className="xl:text-[4.9vw] font-times max-sm:flex-wrap md:text-[50px] lg:text-[55px] text-[43px] font-bold text-white bg-clip-text text-transparent mt-[-20px] ">
             Lahiru Jayarathne
@@ -36,7 +36,7 @@ export default function Hero() {
           className="sm:hidden"
         >
           <div className=" font-semibold items-baseline gap-4 text-white sm:bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent flex flex-wrap text-center justify-center">
-            <span className="text-[30px] bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent max-xsm:text-[25px]">Hello! I'm </span>
+            <span className="text-[30px] bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent max-xsm:text-[25px]">Hello! I&apos;m </span>
             <span className="text-[40px] font-times  max-xsm:text-[30px] mt-[-10px] leading-tight" >Lahiru Jayarathne</span>
           </div>
         </motion.div>
@@ -59,7 +59,7 @@ export default function Hero() {
           className="flex flex-wrap pt-1 max-xl:justify-center xl:max-w-[90%]"
         >
           <p className="flex max-sm:text-[15px] max-sm:flex-wrap max-sm:text-center font-futura text-lg  leading-relaxed text-[16px] tracking-wide text-gray-300 max-xl:text-center">
-            I'm a passionate Software Engineer specializing in web and software
+            I&apos;m a passionate Software Engineer specializing in web and software
             development. With expertise in Next.js, React, Angular, Spring Boot,
             and .NET Core, I craft high-performing, user-friendly digital
             solutions. Let’s build something amazing together!
