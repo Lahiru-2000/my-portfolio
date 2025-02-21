@@ -11,7 +11,7 @@ export default function Hero() {
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
-      className="flex max-w-[90%] sm:max-w-[80%] mx-auto bg-black xl:h-[92vh] xl:justify-between items-center text-white max-xl:flex-col"
+      className="flex max-w-[90%] sm:max-w-[80%] mx-auto bg-black h-[92vh] xl:justify-between items-center text-white max-xl:flex-col mt-[-10px]"
     >
       {/* Left Section */}
       <div className="flex sm:flex-col max-sm:flex-col max-sm:justify-center space-y-6 max-xl:h-[92vh] max-xl:justify-center xl:max-w-[60%] max-md:mt-[-20px]">
