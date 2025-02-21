@@ -89,7 +89,7 @@ function Hireme() {
   };
 
   return (
-    <div className="mb-32 pt-20 justify-center items-center max-w-7xl mx-auto max-xl:px-6 ">
+    <div id="contact" className=" mt-3 justify-center items-center max-w-7xl mx-auto max-xl:px-6 scroll-mt-32" >
       
               
 

@@ -2,11 +2,8 @@
 
 import React, { useState, Suspense, lazy } from "react";
 
-
 const CategoryFilter = lazy(() => import("@/app/components/CategoryFilterProps"));
 const ProjectCard = lazy(() => import("@/app/components/ProjectCard"));
-
-
 
 const OurProjects = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>("All");
@@ -23,8 +20,7 @@ const OurProjects = () => {
     {
       id: 2,
       title: "📱 Skill Improvement App",
-      description:
-        "Enhances students' technical knowledge with certification & ranking.",
+      description: "Enhances students' technical knowledge with certification & ranking.",
       category: "Mobile Apps",
       companyName: "Skill UP",
       imageUrl: "/assets/projects/Skill_up-mobile.png",
@@ -69,9 +65,6 @@ const OurProjects = () => {
       companyName: "Hardware Hub",
       imageUrl: "/assets/projects/Hardware-Web.png",
     },
-
-    // Brand   ,  Websites
-    // Add more projects as needed
   ];
 
   // Filter projects based on selectedCategory
@@ -81,53 +74,49 @@ const OurProjects = () => {
       : projects.filter((project) => project.category === selectedCategory);
 
   return (
-    <Suspense >
-        <div className="bg-gradient-to-r from-[#141E30] to-[#243B55] min-h-[91.27vh]">
-      <div className="max-w-7xl mx-auto  py-3 text-white max-2xl:p-8 ">
-        {/* Section Header */}
-        <section id="projects" className="w-full h-auto py-8 mb-8">
-          <div className="max-w-full text-start">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-          <span className=' tracking-wide text-blue-400'>Projects</span>
+    <Suspense>
+      <div id="projects" className=" pt-16 py-3 ">
+        <div className="max-w-7xl mx-auto py-3 text-white">
+          {/* Section Header */}
+          <section className="w-full h-auto py-8 mb-8">
+            <div className="max-w-full text-start">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                <span className="tracking-wide text-blue-400">Projects</span>
+              </h2>
 
-          </h2>
-           
-            <p className=" font-normal  max-w-full text-start text-lg text-gray-300 leading-relaxed">
-            Here, you&apos;ll discover a diverse collection of the work I’ve built—ranging from dynamic web applications 
-            to full-stack platforms designed for efficiency and scalability.
+              <p className="font-normal max-w-full text-start text-lg text-gray-300 leading-relaxed">
+                Here, you&apos;ll discover a diverse collection of the work I’ve built—ranging from dynamic web applications 
+                to full-stack platforms designed for efficiency and scalability.
+                <br /><br />
+                Each project is a testament to my expertise in React, Next.js, Spring Boot, 
+                .NET Core, and various modern technologies. I take pride in writing clean, 
+                maintainable, and performance-optimized code to craft seamless digital experiences.
+              </p>
+            </div>
+          </section>
 
-            Each project is a testament to my expertise in React, Next.js, Spring Boot, 
-            .NET Core, and various modern technologies. I take pride in writing clean, 
-            maintainable, and performance-optimized code to craft seamless digital experiences.
-            </p>
+          {/* Filter Section */}
+          <div className="mb-4">
+            <Suspense>
+              <CategoryFilter selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} />
+            </Suspense>
           </div>
-        </section>
 
-        {/* Filter Section */}
-        <div className="mb-4">
-          <Suspense >
-            <CategoryFilter
-              selectedCategory={selectedCategory}
-              setSelectedCategory={setSelectedCategory}
-            />
-          </Suspense>
-        </div>
+          <br />
+          <br />
 
-        <br />
-        <br />
-        {/* Projects Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-6">
-          <Suspense >
-            {filteredProjects.map((project) => (
-              <ProjectCard key={project.id} {...project} />
-            ))}
-          </Suspense>
+          {/* Projects Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-6">
+            <Suspense>
+              {filteredProjects.map((project) => (
+                <ProjectCard key={project.id} {...project} />
+              ))}
+            </Suspense>
+          </div>
+
+          <br />
+          <br />
         </div>
-        <br />
-        <br />
-     
-       
-      </div>
       </div>
     </Suspense>
   );

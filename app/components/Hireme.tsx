@@ -10,6 +10,7 @@ import React, { useState } from "react";
 // import Fb from "@/public/assets/Facebook.png";
 // import Linkedin from "@/public/assets/Linkedin.png";
 import {  Linkedin, Mail, Phone } from "lucide-react";
+import Footer from "./Footer";
 
 function Hireme() {
   const [formData, setFormData] = useState({
@@ -89,6 +90,8 @@ function Hireme() {
   };
 
   return (
+    <>
+    <div className="bg-gradient-to-r from-[#141E30] to-[#243B55] pb-40 min-h-[82.6vh]">
     <div className="mb-32 pt-20 justify-center items-center max-w-7xl mx-auto max-xl:px-6 ">
       
               
@@ -273,6 +276,11 @@ function Hireme() {
         </div>
       </div>
     </div>
+    
+   
+    </div>
+    <div className="bottom-0"> <Footer/></div>
+    </>
   );
 }
 
