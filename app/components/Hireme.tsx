@@ -97,12 +97,12 @@ function Hireme() {
       <div className="rounded-md">
         <div className="  mb-[-50px]">
           <div className="flex gap-[15px] max-md:flex-col">
-            <div className="max-sm:p-6 sm:p-8 lg:pt-2 px-8 stroke-[#0A192F] w-[90%] max-md:w-full rounded-tl-[6px]  rounded-tr-[6px] rounded-bl-[6px] gap-y-6 rounded-br-[6px] flex  flex-col" style={{ background: "linear-gradient(135deg, #1A2C34, #2F4A5A, #3C6B88)" }}>
-              <div className="flex  lg:mt-[24px]  text-blue-500 text-xl sm:text-2xl font-bold">
+            <div className="max-sm:p-6 sm:p-8 lg:pt-2 px-8 stroke-[#0A192F] w-[90%] max-md:w-full rounded-tl-[6px]  rounded-tr-[6px] rounded-bl-[6px] gap-y-6 rounded-br-[6px] flex  flex-col bg-gradient-to-r from-[#141E30] to-[#243B55]">
+              <div className="flex  lg:mt-[24px]  text-blue-400 text-3xl md:text-4xl font-bold">
                 <h4>Contact Me</h4>
               </div>
               <div className="flex  justify-center items-start  flex-col sm:pt-3 ">
-                <span className="xsm:pb-10 pb-5">Have a project in mind? Let's turn your vision into reality! Get in touch and let's create something amazing together.</span>
+                <span className="xsm:pb-10 pb-5 max-sm:text-[15px] xl:text-[17px] text-[16px] text-gray-300">Have a project in mind? Let's turn your vision into reality! Get in touch and let's create something amazing together.</span>
                 <div className="flex flex-col max-xsm:gap-y-[5px] sm:gap-y-[20px] max-sm:gap-y-[20px] justify-center"> 
                     <div className="flex gap-[18px] xsm:items-center max-xsm:flex-col">
                         <div>
@@ -116,7 +116,7 @@ function Hireme() {
                             Email
                             </h5> */}
                             <a href="mailto:lahirumadhushan80@gmail.com">
-                            <h5 className="text-white text-base sm:text-lg font-semibold hover:underline">
+                            <h5 className="text-gray-300 font-semibold hover:underline max-sm:text-[15px] xl:text-[17px] text-[16px]">
                             lahirumadhushan80@gmail.com
                             </h5>
                             </a>
@@ -134,7 +134,7 @@ function Hireme() {
                             {/* <h5 className="text-white text-base sm:text-lg font-normal max-sm:pb-1">
                             Phone
                             </h5> */}
-                            <h5 className="text-white text-base sm:text-lg font-semibold">
+                            <h5 className="text-gray-300 font-semibold max-sm:text-[15px] xl:text-[17px] text-[16px] ">
                             0766541631
                             </h5>
                         </div>
@@ -236,7 +236,7 @@ function Hireme() {
                 <textarea
                   placeholder="Write a message"
                   name="des"
-                  value={formData.des}
+                  value={formData.description}
                   onChange={handleChange}
                   required
                   className="w-full p-3 rounded-md focus:border-[#595959] focus:outline-none focus:ring-2 border-[#595959] bg-[#141414] border-solid text-white border-[0.5px]"

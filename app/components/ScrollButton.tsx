@@ -30,7 +30,7 @@ const ScrollToTop = () => {
     isVisible ? "opacity-50 hover:opacity-100" : "opacity-0"
   }`}
 >
-  <ArrowUp size={24} className="text-orange-600"/>
+  <ArrowUp size={24} className="text-blue-400"/>
 </button>
 
   );
