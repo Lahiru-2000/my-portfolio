@@ -7,9 +7,9 @@ const AboutHome = () => {
   return (
     <div className="bg-gradient-to-r from-[#141E30] to-[#243B55] pb-40">
     <section id="about" className=" text-white py-16 px-8 md:px-20 scroll-mt-16">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10 justify-between">
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-10 justify-between">
          {/* Profile Image */}
-         <div className="relative w-[290px] md:hidden h-[290px] md:w-[250px] md:h-[250px] max-xsm:w-[250px] max-xsm:h-[250px] xl:hidden lg:w-[300px] lg:h-[300px] rounded-[50%]">
+         <div className="relative w-[290px] lg:hidden h-[290px]  max-xsm:w-[250px] max-xsm:h-[250px] xl:hidden lg:w-[300px] lg:h-[300px] rounded-[50%]">
           <Image
             src="/assets/lahiru3.jpeg"
             alt="Lahiru Jayarathne"
@@ -22,7 +22,7 @@ const AboutHome = () => {
     
 
         {/* About Text */}
-        <div className="text-center md:text-left md:max-w-[60%] 2xl:w-full">
+        <div className="text-center md:text-left lg:w-[60%] xl:w-[100%]">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             <span className="tracking-wide text-blue-400">About Me</span>
           </h2>
@@ -55,7 +55,7 @@ const AboutHome = () => {
         </div>
 
         {/* Profile Image */}
-        <div className="relative max-md:hidden w-[290px] h-[290px] md:w-[250px] md:h-[250px] max-xsm:w-[250px] max-xsm:h-[250px] xl:hidden lg:w-[300px] lg:h-[300px] rounded-[50%]">
+        <div className="relative max-lg:hidden w-[290px] h-[290px] md:w-[250px] md:h-[250px] max-xsm:w-[250px] max-xsm:h-[250px] xl:hidden lg:w-[300px] lg:h-[300px] rounded-[50%]">
           <Image
             src="/assets/lahiru3.jpeg"
             alt="Lahiru Jayarathne"

@@ -20,7 +20,7 @@ export default {
         futura: ["Futura", "sans-serif"],
       },
       screens: {
-        xsm: "350px",
+        xsm: "360px",
       },
     },
   },
